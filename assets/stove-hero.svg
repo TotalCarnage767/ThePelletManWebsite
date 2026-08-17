@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620" role="img" aria-labelledby="title desc">
+  <title id="title">Pellet stove illustration</title>
+  <desc id="desc">A modern black pellet stove with a glowing fire on a stone hearth.</desc>
+  <defs>
+    <linearGradient id="stove" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#3d3a36"/>
+      <stop offset=".48" stop-color="#1c1a18"/>
+      <stop offset="1" stop-color="#0e0d0c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#34180b"/>
+      <stop offset="1" stop-color="#0d0906"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff6a1"/>
+      <stop offset=".42" stop-color="#ffbb3c"/>
+      <stop offset=".76" stop-color="#ff7b0d"/>
+      <stop offset="1" stop-color="#d93d00"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffb338" stop-opacity=".78"/>
+      <stop offset=".55" stop-color="#ef7f1a" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#ef7f1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#9d8977"/>
+      <stop offset="1" stop-color="#67594e"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="360" cy="500" rx="270" ry="145" fill="url(#glow)" opacity=".55"/>
+
+  <g opacity=".48">
+    <path d="M80 120h540v320H80z" fill="#2a2622"/>
+    <g fill="#4a423a" stroke="#161412" stroke-width="4">
+      <path d="M80 120h125v54H80z"/><path d="M205 120h155v54H205z"/><path d="M360 120h132v54H360z"/><path d="M492 120h128v54H492z"/>
+      <path d="M80 174h166v58H80z"/><path d="M246 174h126v58H246z"/><path d="M372 174h152v58H372z"/><path d="M524 174h96v58H524z"/>
+      <path d="M80 232h114v62H80z"/><path d="M194 232h162v62H194z"/><path d="M356 232h128v62H356z"/><path d="M484 232h136v62H484z"/>
+      <path d="M80 294h152v62H80z"/><path d="M232 294h117v62H232z"/><path d="M349 294h158v62H349z"/><path d="M507 294h113v62H507z"/>
+      <path d="M80 356h128v84H80z"/><path d="M208 356h172v84H208z"/><path d="M380 356h113v84H380z"/><path d="M493 356h127v84H493z"/>
+    </g>
+  </g>
+
+  <path d="M105 462h505l46 52H59z" fill="url(#stone)" stroke="#b9a99b" stroke-width="3" opacity=".9"/>
+  <path d="M59 514h597v42H59z" fill="#5d5148" opacity=".9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="325" y="58" width="74" height="150" rx="12" fill="#171614" stroke="#45413d" stroke-width="4"/>
+    <path d="M306 193h112l12 42H294z" fill="#26231f" stroke="#5b554f" stroke-width="3"/>
+    <rect x="233" y="216" width="258" height="290" rx="24" fill="url(#stove)" stroke="#5c5650" stroke-width="4"/>
+    <rect x="265" y="252" width="194" height="169" rx="18" fill="#080706" stroke="#67605a" stroke-width="5"/>
+    <rect x="280" y="267" width="164" height="139" rx="13" fill="url(#glass)" stroke="#28231f" stroke-width="3"/>
+    <ellipse cx="362" cy="367" rx="73" ry="51" fill="url(#glow)" opacity=".9"/>
+    <path d="M362 393c-39-9-52-42-24-78-1 24 16 26 18 44 5-34 39-46 22-87 50 39 63 89 25 121-13 11-28 17-43 17-18 0-37-7-50-24 19 9 36 9 52 7z" fill="url(#fire)"/>
+    <path d="M295 439h134" stroke="#55504a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M295 458h134" stroke="#47423e" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="448" cy="445" r="6" fill="#ef7f1a"/>
+    <rect x="261" y="492" width="28" height="61" rx="9" fill="#161513"/>
+    <rect x="435" y="492" width="28" height="61" rx="9" fill="#161513"/>
+  </g>
+
+  <g opacity=".9">
+    <path d="M122 422h71l15 90h-99z" fill="#151412" stroke="#4c4742" stroke-width="3"/>
+    <path d="M126 417c13-39 50-39 63 0" fill="none" stroke="#5e5750" stroke-width="7" stroke-linecap="round"/>
+    <ellipse cx="158" cy="432" rx="27" ry="7" fill="#9f6f3c"/>
+  </g>
+</svg>
