@@ -1,0 +1,128 @@
+.faq {
+  background: #f7f3ed;
+}
+
+.faq-heading {
+  max-width: 800px;
+  margin-bottom: 36px;
+}
+
+.faq-heading h2 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+  line-height: 1;
+  letter-spacing: -.045em;
+}
+
+.faq-heading > p:last-child {
+  margin: 18px 0 0;
+  max-width: 740px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-item {
+  overflow: hidden;
+  border: 1px solid rgba(40,31,23,.11);
+  border-radius: 18px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 9px 28px rgba(41,30,20,.045);
+}
+
+.faq-item summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 62px 22px 24px;
+  font-size: 1.04rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #1b1917;
+  color: var(--orange-2);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary {
+  color: var(--orange-dark);
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-answer {
+  padding: 0 24px 23px;
+  color: var(--muted);
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+.faq-cta {
+  margin-top: 26px;
+  padding: 22px 24px;
+  border-radius: 18px;
+  background: #1a1816;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.faq-cta div {
+  display: grid;
+  gap: 3px;
+}
+
+.faq-cta span {
+  color: #cfc7be;
+  font-size: .92rem;
+}
+
+.faq-cta a {
+  color: var(--orange-2);
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .faq-item summary {
+    padding: 20px 54px 20px 20px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 21px;
+  }
+
+  .faq-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
