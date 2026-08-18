@@ -3,24 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Pellet Man | Pellet Stove, Heating & HVAC Service in Eastern NY</title>
-  <meta name="description" content="The Pellet Man, operated by Robert Sanders through The PelletMan LLC, provides pellet stove repair, diagnostics, seasonal maintenance, heating and HVAC service, and consultation across Eastern New York.">
+  <title>The Pellet Man | Pellet Stove Service & Repair in Eastern NY</title>
+  <meta name="description" content="The Pellet Man, operated by Robert Sanders through The PelletMan LLC, provides pellet stove diagnostics, service, repairs, cleaning, maintenance, troubleshooting, and pellet stove guidance across Eastern New York.">
   <meta name="theme-color" content="#151515">
-  <meta property="og:title" content="The Pellet Man | Pellet Stove, Heating & HVAC Service">
-  <meta property="og:description" content="Pellet stove repair, diagnostics, seasonal maintenance, heating and HVAC service, and consultation across Eastern New York.">
+  <meta property="og:title" content="The Pellet Man | Pellet Stove Service & Repair">
+  <meta property="og:description" content="Pellet stove diagnostics, service, repairs, cleaning, maintenance, and troubleshooting across Eastern New York.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thepelletmanservices.com/">
   <link rel="canonical" href="https://thepelletmanservices.com/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="faq.css">
+  <style>
+    .hero-art .real-hero-photo {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 650px);
+      border-radius: 24px;
+      object-fit: cover;
+      box-shadow: 0 26px 55px rgba(0,0,0,.42);
+    }
+    .about-visual .real-about-photo {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cleaning-results {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      overflow: hidden;
+      border-radius: 24px;
+      background: #171513;
+      box-shadow: 0 18px 45px rgba(29,20,12,.14);
+    }
+    .cleaning-results-copy {
+      padding: 34px;
+      align-self: center;
+      color: #fff;
+    }
+    .cleaning-results-copy h3 {
+      margin: 0 0 12px;
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+    .cleaning-results-copy > p:last-child {
+      margin: 0;
+      color: #c9c1b8;
+    }
+    .cleaning-results-image {
+      display: grid;
+      place-items: center;
+      background: #0d0c0b;
+    }
+    .cleaning-results-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 800px) {
+      .cleaning-results { grid-template-columns: 1fr; }
+      .cleaning-results-copy { padding: 26px; }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "The Pellet Man",
     "legalName": "The PelletMan LLC",
-    "description": "Local heating, HVAC, and pellet stove service including diagnostics, repairs, seasonal cleaning and maintenance, performance checks, and consultation across Eastern New York.",
+    "description": "Pellet stove service including diagnostics, repairs, seasonal cleaning, maintenance, troubleshooting, performance checks, and pellet stove guidance across Eastern New York.",
     "url": "https://thepelletmanservices.com/",
     "telephone": "+1-845-532-5114",
     "email": "robert_sanders1960@yahoo.com",
@@ -42,9 +98,9 @@
     },
     "makesOffer": [
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pellet Stove Repair & Diagnostics"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Seasonal Cleaning & Maintenance"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Heating & HVAC Service"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pellet Stove Consultation"}}
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pellet Stove Cleaning & Maintenance"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pellet Stove Troubleshooting & Performance Checks"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pellet Stove Consultation & Guidance"}}
     ]
   }
   </script>
@@ -87,7 +143,7 @@
         <div class="hero-copy">
           <p class="eyebrow">Eastern New York • NYC to Lake George</p>
           <h1>Pellet Stove<br><span>Service &amp; Repair</span></h1>
-          <p class="hero-lead">Local pellet stove, heating, and HVAC service focused on dependable operation, proper maintenance, and practical repairs.</p>
+          <p class="hero-lead">Local pellet stove service focused on dependable operation, proper maintenance, accurate troubleshooting, and practical repairs.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:+18455325114"><span aria-hidden="true">☎</span> Call to Schedule</a>
           </div>
@@ -98,9 +154,9 @@
           </div>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="warm-glow"></div>
-          <img src="assets/stove-hero.svg" alt="" width="700" height="620">
+        <div class="hero-art">
+          <div class="warm-glow" aria-hidden="true"></div>
+          <img class="real-hero-photo" src="assets/hero-real.webp" alt="Black pellet stove with a visible flame in a finished room" width="520" height="317">
         </div>
       </div>
       <div class="hero-fade"></div>
@@ -108,17 +164,14 @@
 
     <section class="section about" id="about">
       <div class="container about-grid">
-        <div class="about-visual" aria-hidden="true">
-          <div class="about-panel">
-            <img src="assets/logo.svg" alt="" width="150" height="150">
-            <span class="mini-flame">🔥</span>
-          </div>
+        <div class="about-visual">
+          <img class="real-about-photo" src="assets/about-stove.webp" alt="Pellet stove installed against a brick wall" width="430" height="254">
         </div>
         <div class="about-copy">
           <p class="eyebrow">About The Pellet Man</p>
-          <h2>Local service from Robert Sanders</h2>
-          <p><strong>The PelletMan LLC</strong> is operated by Robert Sanders under the customer-facing name The Pellet Man. Robert provides local heating, HVAC, and pellet stove service with a focus on diagnostics, maintenance, repairs, seasonal cleanings, and practical guidance for stove owners.</p>
-          <p>Whether you are maintaining a stove you have used for years, troubleshooting a new problem, or learning about a pellet stove for the first time, the goal is straightforward service without a complicated booking process.</p>
+          <h2>Local pellet stove service from Robert Sanders</h2>
+          <p><strong>The PelletMan LLC</strong> is operated by Robert Sanders under the customer-facing name The Pellet Man. Robert focuses specifically on pellet stove diagnostics, cleaning, maintenance, troubleshooting, service, and repairs.</p>
+          <p>Whether you have used your stove for years, are dealing with a new problem, recently moved into a home with a pellet stove, or are learning how one works for the first time, the goal is straightforward pellet stove service without a complicated booking process.</p>
           <a class="text-link" href="tel:+18455325114">Call Robert to schedule <span aria-hidden="true">→</span></a>
         </div>
       </div>
@@ -128,36 +181,47 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">What we do</p>
-          <h2>Pellet Stove, Heating &amp; HVAC Services</h2>
-          <p>From seasonal maintenance to diagnosing a stove that will not run correctly, Robert provides straightforward service and guidance based on the equipment and problem you are dealing with.</p>
+          <h2>Pellet Stove Services</h2>
+          <p>From routine cleaning to diagnosing a stove that will not run correctly, Robert provides focused pellet stove service based on the make, model, symptoms, and condition of the unit.</p>
         </div>
 
         <div class="service-grid">
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">🔧</div>
             <h3>Repair &amp; Diagnostics</h3>
-            <p>Troubleshooting and repair for pellet stove problems including feed, ignition, airflow, electrical, heat-output, and operating issues. Service can include equipment from brands such as ComfortBilt.</p>
+            <p>Troubleshooting and repair for pellet stove problems involving pellet feed, ignition, airflow, electrical components, unusual shutdowns, error codes, poor output, and other operating issues.</p>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">🧹</div>
-            <h3>Seasonal Maintenance</h3>
-            <p>Thorough cleanings, routine maintenance, and safety-focused checks to help keep pellet heating equipment dependable and ready for the heating season.</p>
+            <h3>Cleaning &amp; Maintenance</h3>
+            <p>Thorough cleanings and routine maintenance to remove ash, soot, and pellet dust from important areas and help keep the stove dependable during regular use.</p>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">⚙️</div>
-            <h3>Heating &amp; HVAC Service</h3>
-            <p>Local heating and HVAC service alongside pellet stove work, with attention to safe operation, performance, and identifying problems before they become larger repairs.</p>
+            <h3>Troubleshooting &amp; Performance</h3>
+            <p>Checks for weak flames, poor pellet feeding, unusual noises, reduced output, airflow problems, startup trouble, shutdown problems, and other changes in stove performance.</p>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">💬</div>
-            <h3>Consultation &amp; Guidance</h3>
-            <p>Practical guidance for new owners and buyers, including installation considerations, local requirements, equipment questions, and alternative heating options.</p>
+            <h3>Pellet Stove Guidance</h3>
+            <p>Practical guidance for new owners and buyers, including pellet stove operation, installation considerations, maintenance questions, equipment concerns, and what to watch for during ownership.</p>
           </article>
         </div>
 
         <div class="service-note">
           <strong>Not sure what your stove needs?</strong>
           <span><a href="tel:+18455325114">Call Robert</a> and describe what it is doing.</span>
+        </div>
+
+        <div class="cleaning-results">
+          <div class="cleaning-results-copy">
+            <p class="eyebrow">Cleaning &amp; maintenance</p>
+            <h3>What a thorough cleaning can reveal</h3>
+            <p>Built-up ash, soot, and pellet dust can restrict airflow and affect how a pellet stove operates. A proper cleaning removes buildup from the areas that matter for dependable performance.</p>
+          </div>
+          <div class="cleaning-results-image">
+            <img src="data:image/webp;base64,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" alt="Pellet stove firebox shown dirty on the left and cleaned on the right" width="560" height="152">
+          </div>
         </div>
       </div>
     </section>
@@ -173,37 +237,31 @@
         <div class="faq-list">
           <details class="faq-item" open>
             <summary>How often should a pellet stove be cleaned or serviced?</summary>
-            <div class="faq-answer"><p>A pellet stove should be cleaned regularly during the heating season, with a more thorough cleaning and inspection performed periodically. Ash, soot, and pellet dust can build up in areas that are not obvious during normal use. Keeping the stove clean helps maintain proper airflow, dependable operation, and efficient heat output.</p></div>
+            <div class="faq-answer"><p>A pellet stove should be cleaned regularly during periods of frequent use, with a more thorough cleaning and inspection performed periodically. Ash, soot, and pellet dust can build up in areas that are not obvious during normal use. Keeping the stove clean helps maintain proper airflow, dependable operation, and efficient output.</p></div>
           </details>
-
           <details class="faq-item">
             <summary>Why does my pellet stove need professional service if I clean the ash myself?</summary>
             <div class="faq-answer"><p>Emptying the burn pot and ash pan is important, but there are internal areas and components that also need attention. Blowers, exhaust passages, sensors, motors, seals, and venting can collect debris or develop problems over time. A more complete service can identify issues that routine homeowner cleaning may not reveal.</p></div>
           </details>
-
           <details class="faq-item">
             <summary>What are the signs that my pellet stove may need repair?</summary>
-            <div class="faq-answer"><p>Common warning signs include trouble starting, pellets not feeding properly, weak or unusual flames, excessive smoke or soot, strange noises, poor heat output, the stove shutting itself down, or error codes. If the stove suddenly starts behaving differently than normal, it is worth having the problem diagnosed before it becomes a larger repair.</p></div>
+            <div class="faq-answer"><p>Common warning signs include trouble starting, pellets not feeding properly, weak or unusual flames, excessive smoke or soot, strange noises, poor output, the stove shutting itself down, or error codes. If the stove suddenly starts behaving differently than normal, it is worth having the problem diagnosed before it becomes a larger repair.</p></div>
           </details>
-
           <details class="faq-item">
             <summary>I just bought a home with a pellet stove. Should I have it checked before using it?</summary>
-            <div class="faq-answer"><p>Yes, especially if you do not know its maintenance history. A previous owner may not have cleaned or serviced it regularly, and you may not know the condition of the venting, seals, motors, or other components. An inspection can give a new owner a better understanding of the stove's condition before relying on it for heat.</p></div>
+            <div class="faq-answer"><p>Yes, especially if you do not know its maintenance history. A previous owner may not have cleaned or serviced it regularly, and you may not know the condition of the venting, seals, motors, or other components. An inspection can give a new owner a better understanding of the stove's condition before relying on it.</p></div>
           </details>
-
           <details class="faq-item">
             <summary>I'm buying a used pellet stove. What should I know before installing or using it?</summary>
-            <div class="faq-answer"><p>Used pellet stoves can be a good option, but age and condition matter. Components such as auger motors, igniters, blowers, switches, control boards, door seals, and exhaust systems can wear over time. Knowing the stove's make and model and having its condition evaluated can help identify problems before you depend on it during cold weather.</p></div>
+            <div class="faq-answer"><p>Used pellet stoves can be a good option, but age and condition matter. Components such as auger motors, igniters, blowers, switches, control boards, door seals, and exhaust systems can wear over time. Knowing the stove's make and model and having its condition evaluated can help identify problems before regular use.</p></div>
           </details>
-
           <details class="faq-item">
-            <summary>Why isn't my pellet stove producing as much heat as it used to?</summary>
-            <div class="faq-answer"><p>Reduced heat can come from several things, including restricted airflow, dirty internal passages, worn seals, blower problems, pellet-feed issues, poor-quality fuel, or components that are not operating correctly. Cleaning and troubleshooting the stove can help determine whether the problem is maintenance-related or something that needs repair.</p></div>
+            <summary>Why isn't my pellet stove producing as much output as it used to?</summary>
+            <div class="faq-answer"><p>Reduced output can come from several things, including restricted airflow, dirty internal passages, worn seals, blower problems, pellet-feed issues, poor-quality fuel, or components that are not operating correctly. Cleaning and troubleshooting the stove can help determine whether the problem is maintenance-related or something that needs repair.</p></div>
           </details>
-
           <details class="faq-item">
             <summary>Is preventative maintenance worth it if the stove is still working?</summary>
-            <div class="faq-answer"><p>Usually, yes. A stove can continue running while airflow becomes restricted or components begin wearing down. Routine maintenance gives you a chance to address smaller issues before they turn into a breakdown, especially before the coldest part of the heating season.</p></div>
+            <div class="faq-answer"><p>Usually, yes. A stove can continue running while airflow becomes restricted or components begin wearing down. Routine maintenance gives you a chance to address smaller issues before they turn into a breakdown, especially before periods when you expect to use the stove regularly.</p></div>
           </details>
         </div>
 
@@ -224,25 +282,12 @@
             <p class="eyebrow">Previous work</p>
             <h2>Work Gallery</h2>
           </div>
-          <p>Real photos from completed service and repair jobs will be added here.</p>
+          <p>Real photos from completed pellet stove service and repair jobs will be added here.</p>
         </div>
-
         <div class="gallery-grid" aria-label="Future job photo gallery">
-          <div class="gallery-placeholder">
-            <span aria-hidden="true">🔥</span>
-            <strong>Service Jobs</strong>
-            <small>Photos coming soon</small>
-          </div>
-          <div class="gallery-placeholder">
-            <span aria-hidden="true">🔧</span>
-            <strong>Repairs</strong>
-            <small>Photos coming soon</small>
-          </div>
-          <div class="gallery-placeholder">
-            <span aria-hidden="true">🧹</span>
-            <strong>Maintenance</strong>
-            <small>Photos coming soon</small>
-          </div>
+          <div class="gallery-placeholder"><span aria-hidden="true">🔥</span><strong>Service Jobs</strong><small>Photos coming soon</small></div>
+          <div class="gallery-placeholder"><span aria-hidden="true">🔧</span><strong>Repairs</strong><small>Photos coming soon</small></div>
+          <div class="gallery-placeholder"><span aria-hidden="true">🧹</span><strong>Maintenance</strong><small>Photos coming soon</small></div>
         </div>
       </div>
     </section>
@@ -252,7 +297,7 @@
         <div>
           <p class="eyebrow">Local service</p>
           <h2>Serving Eastern New York — NYC to Lake George</h2>
-          <p>Serving Eastern New York from New York City north through the Capital Region to the Lake George area. Call to confirm availability for your location and schedule a service appointment.</p>
+          <p>Serving Eastern New York from New York City north through the Capital Region to the Lake George area. Call to confirm availability for your location and schedule a pellet stove service appointment.</p>
         </div>
         <div class="area-card">
           <div class="pin" aria-hidden="true">●</div>
@@ -268,9 +313,9 @@
     <section class="contact" id="contact">
       <div class="container contact-grid">
         <div class="contact-copy">
-          <p class="eyebrow">Need service?</p>
+          <p class="eyebrow">Need pellet stove service?</p>
           <h2>Call The Pellet Man</h2>
-          <p>For questions, diagnostics, maintenance, service availability, or to make an appointment, call Robert directly.</p>
+          <p>For pellet stove questions, diagnostics, cleaning, maintenance, repairs, service availability, or to make an appointment, call Robert directly.</p>
         </div>
         <div class="contact-actions">
           <a class="big-call" href="tel:+18455325114" aria-label="Call The Pellet Man">
@@ -287,7 +332,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.svg" alt="" width="48" height="48">
-        <div><strong>The Pellet Man</strong><small>Service &amp; Repair</small></div>
+        <div><strong>The Pellet Man</strong><small>Pellet Stove Service &amp; Repair</small></div>
       </div>
       <div class="footer-copy">
         <span>The PelletMan LLC</span>
